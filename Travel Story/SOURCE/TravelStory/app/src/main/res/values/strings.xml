@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TravelStory</string>
+    <string name="google_map_api_key" translatable="false">
+        AIzaSyBImN_s4utQenNCUUSijEBfHjS3--qJ_hU
+    </string>
+    <string name="server_key" translatable="false">
+        AIzaSyATZolWsRvWXS8ybr-1AZq5V0xw2X4-ZXI
+    </string>
+</resources>

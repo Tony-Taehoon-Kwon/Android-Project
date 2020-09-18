@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:weightSum="1"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:id="@+id/previousSwitchButton"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_navigate_before"/>
+
+            <ImageSwitcher
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:src="@drawable/ic_image"
+                android:id="@+id/itineraryImage"/>
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.15"
+                android:id="@+id/nextSwitchButton"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_navigate_next"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Place name"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:singleLine="true"
+                android:id="@+id/destinationTitle"/>
+
+            <!--
+            android:layout_weight="0.9"
+            -->
+
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_weight="0.1"
+                android:drawableLeft="@drawable/ic_star"
+                android:drawablePadding="10dp"
+                android:text="4.5"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+            -->
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="20dp"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:id="@+id/destinationDescription"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Time"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:id="@+id/timeTitle"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="Arrival"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/arrivalTitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Click to edit"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/arrivalTime"/>
+
+            <TextView
+                android:id="@+id/arrivalTimeErrorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:text="Departure"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/departureTitle"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:hint="Click to edit"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/departureTime"/>
+
+            <TextView
+                android:id="@+id/departureTimeErrorText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+        </LinearLayout>
+
+        <!-- caption
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:id="@+id/imageText"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.AppCompat.EditText"
+            android:id="@+id/imageEditText"/>
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:layout_gravity="center"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Confirm"
+                android:id="@+id/confirmPlaceButton"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Cancel"
+                android:id="@+id/cancelButton"/>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:id="@+id/uploadProgressBar"/>
+
+    </LinearLayout>
+
+</ScrollView>

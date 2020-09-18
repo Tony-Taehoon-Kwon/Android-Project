@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/removePlaceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:drawableStart="@drawable/ic_remove_circle"
+        android:drawablePadding="10dp"
+        android:textAlignment="textStart"
+        android:fontFamily="sans-serif-medium"
+        android:maxLines="1"
+        android:text="First Place"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+
+</LinearLayout>
+

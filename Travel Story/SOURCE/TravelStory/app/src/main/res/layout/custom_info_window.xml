@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white_border"
+    android:padding="10dp"
+    android:clickable="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:id="@+id/infoTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:id="@+id/infoSnippet"/>
+
+    <!-- info window is not a live View, it's an image on the map
+         any listeners you set on the view are disregarded
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Remove"
+            android:textAllCaps="false"
+            android:id="@+id/infoMarkerRemove"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:id="@+id/infoMarkerConfirm"/>
+
+    </LinearLayout>
+    -->
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Login.RegisterActivity">
+
+    <EditText
+        android:id="@+id/registerEmailEditText"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawableTint="#237985"
+        android:drawablePadding="15dp"
+        android:singleLine="true"
+        android:paddingLeft="5dp"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/registerPWEditText"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="15dp"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:paddingLeft="5dp"
+        android:hint="Password"/>
+
+    <EditText
+        android:id="@+id/registerConfirmPWEditText"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="15dp"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:paddingLeft="5dp"
+        android:hint="Confirm Password"/>
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#237985"
+        android:text="Register"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
