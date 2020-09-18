@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "734769418007",
+    "firebase_url": "https://travelstory-265404.firebaseio.com",
+    "project_id": "travelstory-265404",
+    "storage_bucket": "travelstory-265404.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734769418007:android:168e1c926fef64bbd77152",
+        "android_client_info": {
+          "package_name": "com.taehoon.kwon.travelstory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734769418007-7thg757r4gko4o0jas99i737ttocrolg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taehoon.kwon.travelstory",
+            "certificate_hash": "b1526ad368c1800ca112fe9b95dd03bc316764e0"
+          }
+        },
+        {
+          "client_id": "734769418007-dh07uo49s57mjl3jgq3bcdugaeg99qdd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.taehoon.kwon.travelstory",
+            "certificate_hash": "3ae447f7415442bfbbbce405c685e11d4f10012b"
+          }
+        },
+        {
+          "client_id": "734769418007-trho4qjhhu7a83r43v5v3v2aomqqdcfs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcG6K5v_pFBiEl4GyYp1gryIUkpmEVYQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734769418007-trho4qjhhu7a83r43v5v3v2aomqqdcfs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
